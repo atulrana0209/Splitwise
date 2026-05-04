@@ -55,7 +55,7 @@ const authLimiter = isTest
       legacyHeaders: false,
       message: { success: false, message: 'Too many auth attempts, please wait 15 minutes.' },
     });
-    
+
 
 app.use(globalLimiter);
 
@@ -66,6 +66,7 @@ app.use('/api/transactions', require('./routes/transactions'));
 app.use('/api/settlements', require('./routes/settlements'));
 
 // ── Health Check ─────────────────────────────────────────────────────────
+
 app.get('/health', (req, res) => {
   res.json({
     success: true,
