@@ -23,3 +23,4 @@ const changePasswordValidators = [
 ];
 
 module.exports = { registerValidators, loginValidators, updateProfileValidators, changePasswordValidators };
+
