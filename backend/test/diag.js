@@ -18,6 +18,7 @@ async function api(method, path, body, authToken) {
 async function run() {
   const ts = Date.now();
 
+  
   const reg1 = await api('POST', '/auth/register', { name:'Alice', email:`a_${ts}@t.com`, password:'pass123' });
   console.log('Register1:', reg1.status, JSON.stringify(reg1.data).slice(0,200));
   const token1 = reg1.data.token;
