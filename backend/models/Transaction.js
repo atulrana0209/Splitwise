@@ -41,6 +41,7 @@ const transactionSchema = new mongoose.Schema({
       type: Number,
       required: true,
     },
+    
     percentage: {
       type: Number,
       default: null,
