@@ -6,7 +6,7 @@ const {
   getMe,
   updateProfile,
   changePassword,
-  getAllUsers,
+  getAllUsers, 
 } = require('../controllers/authController');
 const { protect } = require('../middleware/authMiddleware');
 const { validate } = require('../middleware/validate');
