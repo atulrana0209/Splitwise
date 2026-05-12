@@ -18,6 +18,7 @@ const {
 } = require('../validators/authValidators');
 
 
+
 router.post('/register', registerValidators, validate, registerUser);
 router.post('/login', loginValidators, validate, loginUser);
 router.get('/me', protect, getMe);
