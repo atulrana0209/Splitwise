@@ -20,7 +20,7 @@ const {
 } = require('../validators/groupValidators');
 
 // Group CRUD
-router.route('/')
+router.route('/') 
   .post(protect, createGroupValidators, validate, createGroup)
   .get(protect, getGroups);
 
