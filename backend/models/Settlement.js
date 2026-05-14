@@ -13,7 +13,7 @@ const settlementSchema = new mongoose.Schema({
   fromUser: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
-    required: true,
+    required: true, 
   },
   toUser: {
     type: mongoose.Schema.Types.ObjectId,
