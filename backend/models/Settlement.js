@@ -24,7 +24,7 @@ const settlementSchema = new mongoose.Schema({
     type: Number,
     required: true,
     min: [0.01, 'Amount must be positive'],
-  },
+  },;
   note: {
     type: String,
     default: '',
